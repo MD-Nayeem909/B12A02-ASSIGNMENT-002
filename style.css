@@ -50,6 +50,10 @@ span{
     text-decoration: none;
     border: none;
 }
+.margin-20{
+    margin: 20px 0;
+    
+}
 
 /* --------------------------------- */
 
@@ -124,58 +128,122 @@ body{
     text-align: center;
 }
 
+.plants-lover-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    margin: 220px auto;
+    align-items: center;
+}
+.flower-store-img{
+    position: relative;
+}
+.trusted-badge{
+    position: absolute;
+    height: auto;
+    max-width: 286px;
+    top: -70px;
+    right: -70px;
+}
+.Plants-Lover{
+    margin-left: 120px;
+}
+
 /* --------Available Responsive Breakpoints------ */
 
 /* --------Small-Device <576px------ */
+
 @media (max-width: 576px) {
 
-    /* ---Header-section--- */
+/* ---Header-section--- */
 
-    .navbar-container{
-        width: 100%;
-        margin: 13px 16px;
-        max-width: 544px;
-        
-    }
-    .logo{
-        width: 100%;
-        max-width: 68px;
-    }
-    .menu .Home, .Shop, .About-us {
-        display: none;
-    }
-    .menu .Cart{
-        font-size: 1rem;
-        color: #000000;
-    }
-    .fa-solid{
-        font-size: 1rem;
-    }
+.navbar-container{
+    width: 100%;
+    margin: 13px 16px;
+    max-width: 544px;
+    
+}
+.logo{
+    width: 100%;
+    max-width: 68px;
+}
+.menu .Home, .Shop, .About-us {
+    display: none;
+}
+.menu .Cart{
+    font-size: 1rem;
+    color: #000000;
+}
+.fa-solid{
+    font-size: 1rem;
+}
 
-    /* -----Banner-section---- */
+/* -----Banner-section---- */
 
-    .banner{
+.banner{
     display: flex;
     flex-direction: column-reverse;
     margin: auto;
     max-width: 100vw;
-    }
-    .banner-tittel{
-        width: 100%;
-        max-width: 544px;
-        align-items: center;
-        margin: auto;
-    }
-    .banner-tittel h2{
-        font-size: 1.5rem;
-        font-weight: bold;
-        max-width: 191px;
-    }
-    .banner-img{
-        height: auto;
-        object-position: top;
-        object-fit: cover;
-        width: 100%;
-        margin-bottom: 28px;
-    }
+}
+.banner-tittel{
+    width: 100%;
+    max-width: 544px;
+    align-items: center;
+    margin: auto;
+}
+.banner-tittel h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    max-width: 400px;
+}
+.banner-img{
+    height: auto;
+    object-position: top;
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+/* ---------Our Plants section------ */
+.plants-p{
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+/* ----------plants-lover-section--------- */
+
+.plants-lover-section{
+    flex-direction: column;
+    width: 100%;
+    margin: 41px 0;
+    align-items: center;
+}
+    
+.trusted-badge{
+    display: none;
+}
+.flower-store-img{
+    height: auto;
+    width: 100%;
+    max-width: 560px;
+    margin-bottom: 18px;
+
+}
+.Plants-Lover{
+    margin: 0;
+    width: 100%;
+    max-width: 560px;
+}
+#Plants-Lover-description{
+    max-width: 510px;
+    margin: 18px auto 0;
+}
+h3{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
 }
