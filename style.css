@@ -10,12 +10,29 @@ font-family: "Inter", sans-serif; */
     box-sizing: border-box;
 }
 
- 
+/* ----Share-property---- */
+h3{
+    font-size: 3.125rem;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+}
+.font-R-22{
+   font-size: 1.375rem;
+   color: rgba(0, 0, 0, 0.5);
+   font-family: "Inter", sans-serif;
+}
+
+span{
+    color: #E95A08;
+}
+
+/* --------------------------------- */
 
 body{
     margin: 0 auto;
     width: 100%;
     max-width: 1440px;
+    background-color: #f5f8ff;
 }
 
 .navbar-container{
@@ -26,6 +43,7 @@ body{
     max-width: 1140px;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 120px;
     font-family: "Inter", sans-serif;
 }
 
@@ -40,7 +58,28 @@ body{
 
 }
 
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+}
+.banner-tittel h2{
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+    margin-bottom: 14px;
+}
+
+/* --------Available Responsive Breakpoints------ */
+
+/* --------Small-Device <576px------ */
 @media (max-width: 576px) {
+
+    /* ---Header-section--- */
+
     .navbar-container{
         width: 100%;
         margin: 13px 16px;
@@ -60,5 +99,32 @@ body{
     }
     .fa-solid{
         font-size: 1rem;
+    }
+
+    /* -----Banner-section---- */
+
+    .banner{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+    max-width: 100vw;
+    }
+    .banner-tittel{
+        width: 100%;
+        max-width: 544px;
+        align-items: center;
+        margin: auto;
+    }
+    .banner-tittel h2{
+        font-size: 1.5rem;
+        font-weight: bold;
+        max-width: 191px;
+    }
+    .banner-img{
+        height: auto;
+        object-position: top;
+        object-fit: cover;
+        width: 100%;
+        margin-bottom: 28px;
     }
 }
