@@ -45,7 +45,9 @@ span {
 	font-size: 1rem;
 	font-weight: 600;
 	color: #ffffff;
-	padding: 19px 80px;
+	width: 100%;
+	max-width: 270px;
+	padding: 19px 19px;
 	background: #e95a08;
 	text-decoration: none;
 	border: none;
@@ -55,11 +57,11 @@ span {
 }
 .opacity {
 	position: absolute;
-    height: 100%;
-    width: 100%;
+	height: 100%;
+	width: 100%;
 	opacity: 0.5;
 	background-color: #000000;
-    border-radius: 22px;
+	border-radius: 22px;
 }
 a {
 	color: #ffffff;
@@ -77,7 +79,7 @@ body {
 	background-color: #f5f8ff;
 }
 
-header{
+header {
 	margin: 30px auto;
 }
 
@@ -162,14 +164,13 @@ header{
 	max-width: 286px;
 	top: -70px;
 	right: -50px;
-	filter:drop-shadow(0 0 15px rgba(0, 0, 0, 0.2));
-	
+	filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.2));
 }
 /* .Plants-Lover {
 	max-width: 540px;
 	
 } */
-ul{
+ul {
 	padding-left: 40px;
 }
 
@@ -264,36 +265,35 @@ ul{
     font-weight: 600;
 } */
 
-.latest-deals-section{
+.latest-deals-section {
 	margin: auto;
 	max-width: 1140px;
 	text-align: center;
-
 }
-.latest-deals{
+.latest-deals {
 	display: flex;
 	gap: 28px;
 	align-items: center;
 	margin-top: 120px;
 }
-.latest-deals-img{
+.latest-deals-img {
 	position: relative;
 	overflow: hidden;
 }
-.radius{
+.radius {
 	border-radius: 22px;
 }
-.left-img{
+.left-img {
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
 }
-.left-img h4{
+.left-img h4 {
 	font-size: 1.25rem;
 	font-family: "Noto Serif", serif;
 	width: 350px;
 }
-.img-text{
+.img-text {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -303,17 +303,17 @@ ul{
 	flex-direction: column;
 	gap: 26px;
 }
-.deal-bloom{
+.deal-bloom {
 	height: 100%;
 }
-.latest-deals-tittel p{
+.latest-deals-tittel p {
 	font-size: 1.375rem;
 	color: rgba(0, 0, 0, 0.5);
 	font-family: "Inter", sans-serif;
 	max-width: 888px;
 	margin: 20px auto;
 }
-.overlay{
+.overlay {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -323,16 +323,50 @@ ul{
 	background-color: #000000;
 }
 
-.right-img-text h4{
-    font-size: 2.5rem;
+.right-img-text h4 {
+	font-size: 2.5rem;
 	font-family: "Noto Serif", serif;
 	width: 500px;
 }
-.right-img-text a{
-    font-size: 1.75rem;
-    font-weight: 600;
+.right-img-text a {
+	font-size: 1.75rem;
+	font-weight: 600;
 }
 
+/* ------Join the colorful Bunch------ */
+input {
+	background-color: #ffffff;
+	color: #8987a1;
+	font-size: 1rem;
+	border: none;
+	padding: 19px 20px;
+	width: 100%;
+	width: 640px;
+}
+.Bunch-section {
+	margin-top: 120px;
+	position: relative;
+	width: 100%;
+}
+.Bunch-section img {
+	width: 100%;
+	max-width: 1440px;
+	height: 100%;
+}
+.Bunch-input {
+	color: #ffffff;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.flex {
+	display: flex;
+	max-width: 830px;
+	margin: 23px auto;
+}
 
 /* --------Available Responsive Breakpoints------ */
 
@@ -341,7 +375,7 @@ ul{
 @media (max-width: 576px) {
 	/* ---Header-section--- */
 
-	header{
+	header {
 		margin: 16px;
 	}
 	.logo {
@@ -382,7 +416,7 @@ ul{
 	}
 
 	/* ---------Our Plants section------ */
-	.our-plants-section{
+	.our-plants-section {
 	}
 	.plants-p {
 		margin: 0 auto;
@@ -398,7 +432,7 @@ ul{
 		align-items: center;
 		gap: initial;
 	}
-	.Plants-Lover{
+	.Plants-Lover {
 		padding: 0 10px;
 	}
 
@@ -411,7 +445,7 @@ ul{
 		padding: 0 5px;
 		margin-bottom: 18px;
 	}
-	#Plants-Lover-description{
+	#Plants-Lover-description {
 		width: 100%;
 	}
 	h3 {
@@ -419,9 +453,8 @@ ul{
 		font-weight: bold;
 	}
 
-
-/* -------latest-deals-section---- */
-/* 
+	/* -------latest-deals-section---- */
+	/* 
     .latest-deals-container{
         flex-direction: column;
     }
@@ -444,32 +477,58 @@ ul{
         width: 100%;
         height: auto;
 	} */
-	
-	.latest-deals-section{
+
+	.latest-deals-section {
 		padding: 0 10px;
 	}
-	.latest-deals{
+	.latest-deals {
 		flex-direction: column;
 		margin-top: 70px;
 	}
-	.latest-deals-img{
+	.latest-deals-img {
 		width: 100%;
 		height: auto;
 	}
-	.left-img, .deal-bloom, .deal-ana{
+	.left-img,
+	.deal-bloom,
+	.deal-ana {
 		width: 100%;
 	}
-	.right-img-text h4, .img-text h4{
-    font-size: 2.25rem;
-	font-family: "Noto Serif", serif;
-	width: 500px;
+	.right-img-text h4,
+	.img-text h4 {
+		font-size: 2.25rem;
+		font-family: "Noto Serif", serif;
+		width: 500px;
 	}
-	.right-img-text a{
+	.right-img-text{
+		height: 310px;
+	}
+	.right-img-text img{
+		object-fit: cover;
+	}
+	.right-img-text a {
 		font-size: 1.75rem;
 		font-weight: 600;
 	}
-	.img-text a{
+	.img-text a {
 		font-size: 1.75rem;
 		font-weight: 600;
+	}
+
+/* ------Join the colorful Bunch------ */
+
+	.Bunch-input {
+		padding: 0 36px;
+		font-weight: bold;
+	}
+	.Bunch-input h3 {
+		font-size: 2.25rem;
+	}
+	.Bunch-section{
+		height: 375px;
+		margin-top: 44px;
+	}
+	.Bunch-section img{
+		object-fit: cover;
 	}
 }
