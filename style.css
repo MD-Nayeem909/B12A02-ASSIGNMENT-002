@@ -52,6 +52,10 @@ span {
 	text-decoration: none;
 	border: none;
 }
+.button:hover {
+	color: #ffffff;
+	background: #ff792b;
+}
 .margin-20 {
 	margin: 20px 0;
 }
@@ -97,10 +101,22 @@ header {
 	display: flex;
 	gap: 48px;
 }
+.menu .Home {
+	color: #e95a08;
+}
+.menu .Cart {
+	color: #e95a08;
+}
 
 .menu a {
 	text-decoration: none;
 	color: #8987a1;
+	outline: none;
+	border: none;
+}
+.menu a:hover {
+	color: #e95a08;
+	font-weight: bold;
 }
 /* -----Banner-section---- */
 .banner {
@@ -165,6 +181,20 @@ header {
 	top: -70px;
 	right: -50px;
 	filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.2));
+}
+.trusted-badge img {
+	animation: badge-rotated 2s linear infinite;
+}
+@keyframes badge-rotated {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 /* .Plants-Lover {
 	max-width: 540px;
@@ -368,6 +398,49 @@ input {
 	margin: 23px auto;
 }
 
+/* -------footer-section------ */
+
+footer {
+	display: flex;
+	max-width: 1140px;
+	justify-content: space-between;
+	height: 348px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+footer a {
+	color: #6b7280;
+	font-size: 1rem;
+	text-decoration: none;
+}
+footer a:hover {
+	color: #e95a08;
+	font-weight: bold;
+}
+footer ul {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.footer-left-side {
+	max-width: 369px;
+}
+.footer-icon {
+	display: flex;
+	gap: 24px;
+}
+.footer-icon img {
+	height: 36px;
+	width: 36px;
+}
+.vertical-line {
+	height: 80%;
+	width: 2px;
+	background-color: #8987a1;
+	opacity: 20%;
+}
+
 /* --------Available Responsive Breakpoints------ */
 
 /* --------Small-Device <576px------ */
@@ -500,10 +573,10 @@ input {
 		font-family: "Noto Serif", serif;
 		width: 500px;
 	}
-	.right-img-text{
+	.right-img-text {
 		height: 310px;
 	}
-	.right-img-text img{
+	.right-img-text img {
 		object-fit: cover;
 	}
 	.right-img-text a {
@@ -515,7 +588,7 @@ input {
 		font-weight: 600;
 	}
 
-/* ------Join the colorful Bunch------ */
+	/* ------Join the colorful Bunch------ */
 
 	.Bunch-input {
 		padding: 0 36px;
@@ -524,11 +597,40 @@ input {
 	.Bunch-input h3 {
 		font-size: 2.25rem;
 	}
-	.Bunch-section{
+	.Bunch-section {
 		height: 375px;
 		margin-top: 44px;
 	}
-	.Bunch-section img{
+	.Bunch-section img {
 		object-fit: cover;
+	}
+
+/* ---------footer-section------ */
+
+	.footer-left-side {
+		width: 100%;
+		padding: 0 40px;
+		max-width: 576px;
+	}
+	footer {
+		flex-direction: column;
+		padding: 50px 10px;
+		gap: 20px;
+		text-align: center;
+	}
+	footer ul {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding-left: 0;
+	}
+	.footer-icon {
+		justify-content: center;
+	}
+	.footer-left-side img {
+		height: auto;
+		width: 100%;
+		max-width: 180px;
+		margin-bottom: 16px;
 	}
 }
