@@ -371,7 +371,7 @@ input {
 	border: none;
 	padding: 19px 20px;
 	width: 100%;
-	width: 640px;
+	max-width: 640px;
 }
 .Bunch-section {
 	margin-top: 120px;
@@ -605,7 +605,7 @@ footer ul {
 		object-fit: cover;
 	}
 
-/* ---------footer-section------ */
+	/* ---------footer-section------ */
 
 	.footer-left-side {
 		width: 100%;
